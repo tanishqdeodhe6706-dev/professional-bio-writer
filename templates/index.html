@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Bio Generator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+```
+    .container {
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #ddd;
+    }
+
+    .card {
+        background: white;
+        color: black;
+        padding: 30px;
+        margin: 30px auto;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+    }
+
+    button {
+        background: #667eea;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #5a67d8;
+        transform: scale(1.05);
+    }
+
+    .output {
+        margin: 20px auto;
+        width: 80%;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .output h2 {
+        color: #fff;
+    }
+
+    .output p {
+        color: #eee;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🚀 AI Bio Generator</h1>
+    <p>Create professional bios instantly using smart generation</p>
+
+```
+<div class="card">
+    <form method="POST">
+        <input type="text" name="name" placeholder="👤 Enter Name" required>
+        <input type="text" name="role" placeholder="💼 Enter Role" required>
+        <input type="text" name="skills" placeholder="⚡ Enter Skills" required>
+        <button type="submit">✨ Generate Bio</button>
+    </form>
+</div>
+
+{% if short_bio %}
+<div class="output">
+    <h2>🌟 Short Bio</h2>
+    <p>{{ short_bio }}</p>
+
+    <h2>📄 Long Bio</h2>
+    <p>{{ long_bio }}</p>
+</div>
+{% endif %}
+```
+
+</div>
+
+</body>
+</html>
