@@ -1,0 +1,18 @@
+# Professional Bio Writer – Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core ───────────────────────────────────────────────────
+python-dotenv>=1.0.0          # Load .env environment variables
+
+# ── AI Providers (install at least one) ────────────────────
+openai>=1.30.0                # OpenAI GPT models (recommended)
+google-generativeai>=0.7.0    # Google Gemini models (alternative)
+
+# ── Web Research (optional) ────────────────────────────────
+tavily-python>=0.3.3          # Tavily search API for tone research
+
+# ── Standard Library (no install needed) ───────────────────
+# argparse  – CLI argument parsing   (stdlib)
+# pathlib   – File path handling     (stdlib)
+# os        – Environment variables  (stdlib)
+# textwrap  – Text formatting        (stdlib)
